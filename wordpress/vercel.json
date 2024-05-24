@@ -5,13 +5,7 @@
       "use": "@vercel/node",
       "config": {
         "zeroConfig": true
-      },
-      "apis": [
-        {
-          "src": "/api/wp-json/**",
-          "method": "GET"
-        }
-      ]
+      }
     }
   ]
 }
