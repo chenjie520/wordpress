@@ -1,10 +1,11 @@
 {
   "builds": [
     {
-      "src": "wp-content/themes/your-theme/functions.php",
-      "use": "@vercel/node",
+      "src": "*.php",
+      "use": "@vercel/php",
       "config": {
-        "zeroConfig": true
+        "buildCommand": "composer install --no-interaction && composer run-script --no-interaction --timeout=0 serve",
+        "outputDirectory": 0
       }
     }
   ]
