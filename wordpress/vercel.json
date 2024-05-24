@@ -1,0 +1,17 @@
+{
+  "builds": [
+    {
+      "src": "wp-content/themes/your-theme/functions.php",
+      "use": "@vercel/node",
+      "config": {
+        "zeroConfig": true
+      },
+      "apis": [
+        {
+          "src": "/api/wp-json/**",
+          "method": "GET"
+        }
+      ]
+    }
+  ]
+}
